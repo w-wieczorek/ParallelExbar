@@ -262,6 +262,7 @@ namespace ParallelExbar
                 {
                     exh_search(ImmutableList.Create(0), 0, 1);
                     ++max_red;
+                    comm.Barrier();
                 }
                 catch (found_a_solution)
                 {
